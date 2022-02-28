@@ -6,11 +6,11 @@ var urlRoot = "https://api.github.com";
 // NCSU Enterprise endpoint:
 //var urlRoot = "https://api.github.ncsu.edu";
 
-var userId = "yy2111";
+var userId = "gigi-luna";
 var config = {};
 // Retrieve our api token from the environment variables.
-//config.token = process.env.GITHUBTOKEN;
-config.token = "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"
+config.token = process.env.GITHUBTOKEN;
+//config.token = "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"
 
 if( !config.token )
 {
@@ -27,7 +27,7 @@ if (process.env.NODE_ENV != 'test')
 	(async () => {
 		await listAuthenicatedUserRepos();
 		//await listBranches(userId, "your repo");
-		//await createRepo(userId,newrepo);
+		await createRepo(userId,"newrepo");
 		//await createIssue(userId, repo, issue);
 		//await enableWikiSupport(userId,repo);
 
@@ -96,7 +96,7 @@ function listAuthenicatedUserRepos()
 // 1. Write code for listBranches in a given repo under an owner. See list branches
 async function listBranches(owner,repo)
 {
-	let options = getDefaultOptions(`/`, "GET");
+	let options = getDefaultOptions(`/repos/${owner}/${repo}/branches`, "GET");
 
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
@@ -113,7 +113,10 @@ async function listBranches(owner,repo)
 // 2. Write code to create a new repo
 async function createRepo(owner,repo)
 {
-	let options = getDefaultOptions("/", "POST");
+	let options = getDefaultOptions("/user/repos", "POST");
+	options.JSON = {
+		"name": repo
+	}
 
 	// Send a http request to url and specify a callback that will be called upon its return.
 	return new Promise(function(resolve, reject)
