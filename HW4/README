@@ -1,0 +1,24 @@
+Design
+1.	What was most helpful about thinking about design methods of your project?
+-	What was most helpful was having group meetings and communicating with one another. Assigning tasks allowed for a great workflow and kept everything up to date
+2.	What was most difficult? What would you do differently?
+-	The most difficult was learning how to use an API, since this was my first time using it. I have had trouble in the past with databases, so this was a challenge for me. 
+3.	What design methods might you want to try again in the future on another project?
+-	Using the Kanban board was very helpful and will be using for other projects. 
+Implementation
+1.	What was most helpful about implementing, testing, and integration in your bot project?
+-	Testing was very easy with the discord bot since it comes implemented in discord. You can test right from the server and see what needed to be changed.
+2.	What was most difficult? What would you do differently?
+-	Trying to figure out why certain areas were not working. If it failed, there wasn’t a clear indication of where it was going wrong. 
+3.	What implementation, testing, and integration methods might you want to try again in the future on another project?
+-	Constantly testing to see if everything is going smoothly and working properly.
+Process
+1.	What was most helpful about implementing Kanban and code review in your project?
+-	Using kanban allowed for everyone to keep track of their progress and see what was left to be done.
+2.	What was most difficult? What would you do differently?
+-	Maybe using something similar to kanban since duplicate tasks weren’t allowed to be created and sometimes group mates would forget to select complete once the task was finished. 
+3.	What software processes or practices might you want to try again in the future on another project?
+-	I will definitely use kanban again since it was very easy to give everyone tasks and keep a good flow.
+Overall
+Considering all the design methods, implementation practices, and software processes you've encountered---compare and contrast how the benefits of the different practices and how they might be useful together.
+-	Having a scrum meeting helped the group discuss tasks that needed to be implemented and allowed for ideas to be bounced from one another. It can be very time consuming but having one long meeting rather than many small ones is better to get everything in order. There is more time to ask questions and for progress to be seen.
